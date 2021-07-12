@@ -33,6 +33,6 @@ WORKDIR /multisigwallet
 RUN npm install node-gyp
 RUN npm install -g grunt-cli
 RUN npm install
-
+EXPOSE 5000
 
 ENTRYPOINT ["/multisigwallet/docker-entrypoint.sh"]
